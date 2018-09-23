@@ -1,0 +1,1 @@
+Used for learining [React](https://reactjs.org/) with [Redux](https://redux.js.org/)
