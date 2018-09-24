@@ -1,20 +1,31 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
 
 const Link = ({ active, children, onClick }) => {
-  if (active) {
-    return <span><strong>{children}</strong></span>
-  }
+  // if (active) {
+  //   return <span><strong>{children}</strong></span>
+  // }
 
   return (
-    <a
-      href=""
+    <Button bsStyle="primary"
+    style={{
+      marginRight: 10
+    }}
       onClick={e => {
         e.preventDefault()
         onClick()
-      }}
-    >
+      }}>
       {children}
-    </a>
+    </Button>
+    // <a
+    //   href=""
+    //   onClick={e => {
+    //     e.preventDefault()
+    //     onClick()
+    //   }}
+    // >
+    //   {children}
+    // </a>
   )
 }
 
