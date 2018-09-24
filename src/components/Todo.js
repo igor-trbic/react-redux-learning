@@ -5,6 +5,7 @@ const Todo = ({ onClick, completed, text, user }) => (
     onClick={onClick}
     style={{
       textDecoration: completed ? 'line-through' : 'none',
+      opacity: completed ? 0.5 : 1,
       cursor: 'pointer'
     }}
   >
